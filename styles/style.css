@@ -1,0 +1,39 @@
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+
+.custom-bg-color {
+    background-color: #8B0000;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 1px black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h1-container p {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px black;
+}
+
+.navbar-items{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: smaller;
+    
+}
+
+.logo.image img{
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    width: 40%;
+    filter: contrast(110);
+}
