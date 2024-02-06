@@ -199,51 +199,59 @@
     <!-- Here a block button (taking the full width) opens/closes the collapsible -->
     <!-- Here a single card is used, but card columns could be used -->
     <div class="container">
-        <h2>More information</h2>
-        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
-        <div id="mechanics" class="collapse">
-            <div class="card bg-warning" style="width:200px">
-                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Erwind</h4>
-                    <p class="card-text">Erwind knows all about bikes.</p>
-                </div>
-            </div>
-        </div>
+        <h2>Book An Appointment</h2>
     </div>
-
     <!-- Collapsible with multiple items - accordion -->
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container">
-        <div class="container-md p-3 my-3 border bg-warning text-white">
-            <h1>Erwind's and friends bike shop</h1>
-            <p>Bike fixing is our business</p>
-        </div>
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Select service</a>
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Here is our list of services</p>
+                        <div class="container-md p-1 my-3 border">
+                            <label>
+                                <input type="radio" name="haircut" value="mens">
+                                Men's Haircut - CA $35
+                            </label>
+                        </div>
+                        <div class="container-md p-1 my-3 border">
+                            <label>
+                                <input type="radio" name="haircut" value="womens">
+                                Women's Haircut - CA $35
+                            </label>
+                        </div>
+                        <div class="container-md p-1 my-3 border">
+                            <label>
+                                <input type="radio" name="haircut" value="youth">
+                                Youth Haircut | Age: 12-17 - CA $30
+                            </label>
+                        </div>
+                        <div class="container-md p-1 my-3 border">
+                            <label>
+                                <input type="radio" name="haircut" value="childrens">
+                                Children's Haircut | 11 & Under - CA $25
+                            </label>
+                        </div>
                     </div>
                 </div>
+                
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date & time</a>
                 </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>What date?</p>
                         <!-- Bootstrap has various input components. Some examples are given here: -->
                         <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                         <div class="form-group row">
-                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <label for="dateTimeInput" class="col-2 col-form-label">Select date & time:</label>
                             <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                <input class="form-control" type="datetime-local" value=" " id="dateTimeInput">
                             </div>
                         </div>
                     </div>
@@ -251,12 +259,30 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your Contact Information</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
+                        <p>Please provide your contact information:</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
