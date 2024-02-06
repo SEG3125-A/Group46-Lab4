@@ -13,6 +13,16 @@
     background-color: #ffffff;
 }
 
+.table.table-primary {
+    background-color: #ffffff;
+    border: 2px solid #000000; /* Change this to the desired border color and width */
+}
+
+.table.table-primary th,
+.table.table-primary td {
+    border: 2px solid #000000; /* Change this to the desired border color and width */
+}
+
 h1 {
   font-family: "Times New Roman", Times, serif;
   text-shadow: 3px 3px 1px black;
@@ -67,6 +77,10 @@ h3 {
 }
 
 .h3-container p3{
+    color: black;
+}
+
+h2{
     color: black;
 }
 
