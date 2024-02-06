@@ -9,6 +9,10 @@
     background-color: #8B0000;
 }
 
+.custom-bg-color2 {
+    background-color: #ffffff;
+}
+
 h1 {
   font-family: "Times New Roman", Times, serif;
   text-shadow: 3px 3px 1px black;
@@ -37,3 +41,32 @@ h1 {
     width: 40%;
     filter: contrast(110);
 }
+
+h3 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.h3-container p {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.h3-container p1{
+    color: black;
+}
+
+.h3-container p2{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.h3-container p3{
+    color: black;
+}
+
