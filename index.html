@@ -256,24 +256,42 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <script>
-            function submitinfo() {
-                // card is displayed that displays what infor was enterd to confirm with user 
+        </div>       
+    <script>
+    function checkForm() {
+        var serviceSelected = document.querySelector('input[name="haircut"]:checked');
+        var dateTimeInput = document.getElementById('dateTimeInput').value;
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        
+        var submitBtn = document.getElementById('submit');
+        if (serviceSelected && dateTimeInput && firstName && lastName && email && phone) {
+            submitBtn.disabled = false;
+        } else {
+            submitBtn.disabled = true;
+        }
+    }
+  
+    // Event listeners for input fields
+    document.addEventListener('input', checkForm);
+    </script>
 
-                var datetime = document.getElementById('dateTimeInput').value; // Get the date input value
-                //var time = document.getElementById('time').value; // Get the time input value
-                var service = document.querySelector('input[name="haircut"]:checked').value; // Get the value of the selected radio button
-                var firstName = document.getElementById('firstName').value; // Get the first name input value
-                var lastName = document.getElementById('lastName').value; // Get the last name input value
-                var email = document.getElementById('email').value; // Get the email input value\
-                var phone = document.getElementById('phone').value; // Get the phone input value
-                alert('Thank you for booking with us! Here is your Booking info \n\n' + 'Service: ' + service + '\nDate & Time: ' + datetime + '\nFirst Name: ' + firstName + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\nPhone: ' + phone);
-            };
+    <script>
+        function submitinfo() {
+            // card is displayed that displays what infor was enterd to confirm with user 
 
-
-
-        </script>
+            var datetime = document.getElementById('dateTimeInput').value; // Get the date input value
+            //var time = document.getElementById('time').value; // Get the time input value
+            var service = document.querySelector('input[name="haircut"]:checked').value; // Get the value of the selected radio button
+            var firstName = document.getElementById('firstName').value; // Get the first name input value
+            var lastName = document.getElementById('lastName').value; // Get the last name input value
+            var email = document.getElementById('email').value; // Get the email input value\
+            var phone = document.getElementById('phone').value; // Get the phone input value
+            alert('Thank you for booking with us! Here is your Booking info \n\n' + 'Service: ' + service + '\nDate & Time: ' + datetime + '\nFirst Name: ' + firstName + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\nPhone: ' + phone);
+        };
+    </script>
 </body>
 
 </html>
