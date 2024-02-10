@@ -177,25 +177,25 @@
                     <div class="card-body">
                         <div class="container-md p-1 my-3 border">
                             <label>
-                                <input type="radio" name="haircut" value="Men's Haircut">
+                                <input type="radio" name="haircut" value="Men's Haircut - CA $35">
                                 Men's Haircut - CA $35
                             </label>
                         </div>
                         <div class="container-md p-1 my-3 border">
                             <label>
-                                <input type="radio" name="haircut" value="Women's Haircut">
+                                <input type="radio" name="haircut" value="Women's Haircut - CA $24.5 (30% off!)">
                                 Women's Haircut - CA $35
                             </label>
                         </div>
                         <div class="container-md p-1 my-3 border">
                             <label>
-                                <input type="radio" name="haircut" value="Youth Haircut">
+                                <input type="radio" name="haircut" value="Youth Haircut - CA $30">
                                 Youth Haircut | Age: 12-17 - CA $30
                             </label>
                         </div>
                         <div class="container-md p-1 my-3 border">
                             <label>
-                                <input type="radio" name="haircut" value="Children's Haircut">
+                                <input type="radio" name="haircut" value="Children's Haircut - CA $25">
                                 Children's Haircut | 11 & Under - CA $25
                             </label>
                         </div>
@@ -280,7 +280,7 @@
 
     <script>
         function submitinfo() {
-            // card is displayed that displays what infor was enterd to confirm with user 
+            // card is displayed that displays what information was enterd to confirm with user 
 
             var datetime = document.getElementById('dateTimeInput').value; // Get the date input value
             //var time = document.getElementById('time').value; // Get the time input value
@@ -292,6 +292,19 @@
             alert('Thank you for booking with us! Here is your Booking info \n\n' + 'Service: ' + service + '\nDate & Time: ' + datetime + '\nFirst Name: ' + firstName + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\nPhone: ' + phone);
         };
     </script>
+    <div class="card">
+      <div class="card-header">
+      <div class = "dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Please specify payment method:
+      </button>
+      <span class ="payment"></span></button><ul class ="dropdown-menu" role = "menu" aria-labelledby="menu1">
+        <li><a class = "payment" href="#">Credit/Debit Card</a></li>
+        <li><a class = "payment" href="#">Pay at Location</a></li>
+        <li><a class = "payment" href="#">PayPal</a></li>
+        </ul>
+    </div>
+  </div>
+
 </body>
 
 </html>
